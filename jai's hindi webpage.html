@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hindi Poster</title>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Arial Black', sans-serif;
+        background: linear-gradient(135deg, #ff512f, #dd2476);
+        color: white;
+        overflow: hidden;
+    }
+
+    .container {
+        position: relative;
+        display: flex;
+        align-items: center;
+        background: rgba(0, 0, 0, 0.7);
+        padding: 50px;
+        border: 8px solid white;
+        width: 90%;
+        max-width: 900px;
+        box-shadow: 0 0 30px rgba(0,0,0,0.6);
+    }
+
+    .poster {
+        flex: 2;
+        text-align: center;
+    }
+
+    .poster h1 {
+        font-size: 60px;
+        margin-bottom: 15px;
+    }
+
+    .poster h2 {
+        font-size: 28px;
+        margin-bottom: 20px;
+        font-weight: normal;
+    }
+
+    .poster .date,
+    .poster .location {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+
+    .poster button {
+        padding: 15px 35px;
+        font-size: 18px;
+        background: yellow;
+        color: black;
+        border: none;
+        cursor: pointer;
+        font-weight: bold;
+        transition: 0.3s ease;
+    }
+
+    .poster button:hover {
+        background: orange;
+    }
+
+    /* Floating Hindi Image */
+    .floating-img {
+        position: absolute;
+        right: -60px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 220px;
+        animation: float 4s ease-in-out infinite;
+    }
+
+    .floating-img img {
+        width: 100%;
+        border-radius: 15px;
+        border: 5px solid white;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    }
+
+    @keyframes float {
+        0% { transform: translateY(-50%) translateX(0px); }
+        50% { transform: translateY(-55%) translateX(10px); }
+        100% { transform: translateY(-50%) translateX(0px); }
+    }
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="poster">
+      <font color=red><h1><I><B><U>Spoken Hindi Classes</I></B></U></h1></font>
+       <font color=orange><h2>advance to the fluent stage of spoken hindi </h2></font>
+        <font color= green><div class="date">from:23rd april 2026</div>
+        <div class="last date of enrollment;">enroll before 20th april</div></font> 
+<font color=royalblue><H4><div><U>" send request to barcajaisuhanthan@gmail.com </U></div></H4></font>
+
+        <button onclick="alert('thank you for opening this')">click for surprise </button>
+    </div>
+<font color=purple><H4><B> start your journey through hindi orals <BR> and become fluent in spoken hindi <B></H4>
+</font>
+</div>
+
+</body>
+</html>
